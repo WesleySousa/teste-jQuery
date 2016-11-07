@@ -1,0 +1,30 @@
+<html>
+<head>
+	<title>Teste</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> -->
+	<script src="jquery-3.1.1.slim.min.js"></script>
+	<script type="text/javascript">
+		$('um').addClass('selecionado');
+		$(document).ready(function(){
+			$("button").click(function(){
+				if ($("p").hasClass("selecionado")) {
+					$("p").removeClass("selecionado");
+				}else {
+					$("p").addClass("selecionado");	
+				}
+				
+				// $("p").hide();
+			});
+		});
+	</script>
+</head>
+<body>
+	<h2 id="meu-h2">This is a heading</h2>
+
+	<p>This is a paragraph.</p>
+	<p>This is another paragraph.</p>
+
+	<button>Click me to hide paragraphs</button>
+</body>
+</html>
